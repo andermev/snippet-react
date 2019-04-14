@@ -8,15 +8,15 @@
         className: 'container',
         children: 'Hello World'
     } */
-    const message = props => <div>{props.msg}</div>
+    const Message = props => <div>{props.msg}</div>
     const helloWorld = <div>Hello World</div>
     /* const element = (
         <div {...props}/>
     ) */
     const element = (
         <div className="container">
-            {React.createElement(message, {msg: 'Hello World'})}
-            {message({msg: 'Goodbye World'})}
+            <Message msg="Hello World"  />
+            <Message msg="Goodbye World" />
         </div>
     )
     console.log(element)
